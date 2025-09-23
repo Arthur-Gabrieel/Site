@@ -1,8 +1,8 @@
  body { 
     margin: 0;
     padding: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     overflow-x: hidden;
     background-color: rgb(238, 230, 230);
  }
@@ -38,55 +38,6 @@
     border-bottom: 5px solid rgba(209, 86, 4, 0.911);
     border-radius: 5px;
 }
-/*Responsividade da barra pra celulares*/
-@media (max-width: 600px) {
-  .link_top {
-    margin-right: 15px;
-    font-size: 14px;
-  }
-  #logoBasket {
-    width: 70px;
-    height: 70px;
-    margin-right: 10px;
-    padding-left: 5px;
-    margin-top: 10px;
-
-  }
-  .calendario {
-    width: 95%;
-    margin-top: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: none;
-    margin-top: 80px;
-
-  }
-  .calendario-grade {
-    grid-template-columns: repeat(7, 1fr);
-    gap: 0.5px;
-    overflow-x: auto; 
-    background: #ccc;
-  }
-  .calendario-header {
-    font-size: 1em;
-    padding: 10px;
-    background: rgba(26, 25, 24, 0.836);
-  }
-  .dia-nome,
-  .dia {
-    padding: 10px;
-    font-size: 0.8em;
-  }
-  .evento {
-    font-size: 0.7em;
-    padding: 2px;
-    margin-top: 3px;
-    border-radius: 3px;
-    background: rgba(199, 100, 34, 0.911);
-    
-  }
-}
-  
 
 #title2 {
      display: flex;
@@ -150,4 +101,51 @@
       width: 90px;
     }
 
-   
+   /*Responsividade da barra pra celulares*/
+@media (max-width: 600px) {
+  .link_top {
+    margin-right: 15px;
+    font-size: 14px;
+  }
+  #logoBasket {
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+    padding-left: 5px;
+    margin-top: 10px;
+
+  }
+  .calendario {
+    width: 95%;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: none;
+    margin-top: 80px;
+
+  }
+  .calendario-grade {
+    grid-template-columns: repeat(7, 1fr);
+    gap: 0.5px;
+    overflow-x: auto; 
+    background: #ccc;
+  }
+  .calendario-header {
+    font-size: 1em;
+    padding: 10px;
+    background: rgba(26, 25, 24, 0.836);
+  }
+  .dia-nome,
+  .dia {
+    padding: 10px;
+    font-size: 0.8em;
+  }
+  .evento {
+    font-size: 0.7em;
+    padding: 2px;
+    margin-top: 3px;
+    border-radius: 3px;
+    background: rgba(199, 100, 34, 0.911);
+    
+  }
+}

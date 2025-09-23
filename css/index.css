@@ -1,4 +1,4 @@
-body {                /*Corpo do site*/
+body { 
     margin: 0;
     padding: 0;
     width: 100vw;
@@ -9,7 +9,7 @@ body {                /*Corpo do site*/
 
 #top { 
     position: absolute; 
-    width: 100%;              /*Barra do topo*/
+    width: 100%;
     height: 50px;
     background-color: rgba(26, 25, 24, 0.836);
     text-align: center;
@@ -37,20 +37,6 @@ body {                /*Corpo do site*/
     color: rgb(247, 163, 107);
     border-bottom: 5px solid rgba(209, 86, 4, 0.911);
     border-radius: 5px;
-}
-/*Responsividade da barra pra celulares*/
-@media (max-width: 600px) {
-  .link_top {
-    margin-right: 15px;
-    font-size: 14px;
-  }
-  .logoBasket {
-    width: 70px;
-    height: 70px;
-    margin-right: 10px;
-    padding-left: 5px;
-    margin-top: -10px;
-  }
 }
 
 
@@ -82,6 +68,7 @@ body {                /*Corpo do site*/
     align-items: center;
     margin-top: 20px;
 }
+
 
 .noticia1 {
     width: 90vw;
@@ -158,87 +145,6 @@ body {                /*Corpo do site*/
      box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.3);
 
 }
-
-/* Responsividade completa */
-@media (max-width: 768px) {
-  /* Barra do topo */
-  #top {
-    width: 100%;
-    left: 0;
-    padding: 0;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    align-items: center;
-  }
-
-  /* Logo */
-  #logoBasket {
-    width: 60px;
-    height: 60px;
-    margin: 5px 0;
-  }
-
-  /* Links do topo */
-  .link_top {
-    margin: 5px 5px;
-    font-size: 13px;
-  }
-
-  /* Container das notícias */
-  .sessao {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    padding: 10px;
-    width: 100%;
-  }
-
-  /* Notícias individuais */
-  .noticia1, .noticia2, .noticia3, .noticia4 {
-    width: 95%;
-    max-width: 520px;
-    height: auto; /* altura se ajusta ao conteúdo */
-    margin: 10px auto;
-  }
-
-  /* Modal */
-  .modal {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5);
-    justify-content: center;
-    align-items: center;
-    z-index: 999;
-    overflow-y: auto;
-    padding: 10px;
-    box-sizing: border-box;
-    animation: FadeIn 0.3s ease-out;
-  }
-
-  .modalContent {
-    max-width: 95%;
-    display: block;
-    margin: 20px auto;
-    padding: 15px;
-    width: 90%;
-    height: auto;
-    overflow-y: auto;
-    border-radius: 8px;
-    position: relative;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-    background-color: white;
-    z-index: 1000;
-    animation: SlideIn 0.3s ease-out;
-    font-family: sans-serif;
-  }
-}
-
                                         /*CONFIGURAÇÃO DAS IMAGENS*/
 .noticia1 img {
   width: 100%;
@@ -483,4 +389,84 @@ body {                /*Corpo do site*/
   text-decoration: none;
   color: rgb(247, 163, 107);
   
+}
+
+/* Responsividade completa */
+@media (max-width: 768px) {
+  /* Barra do topo */
+  #top {
+    width: 100%;
+    left: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  /* Logo */
+  #logoBasket {
+    width: 60px;
+    height: 60px;
+    margin: 5px 0;
+  }
+
+  /* Links do topo */
+  .link_top {
+    margin: 5px 5px;
+    font-size: 13px;
+  }
+
+  /* Container das notícias */
+  .sessao {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    width: 100%;
+  }
+
+  /* Notícias individuais */
+  .noticia1, .noticia2, .noticia3, .noticia4 {
+    width: 95%;
+    max-width: 520px;
+    height: auto; /* altura se ajusta ao conteúdo */
+    margin: 10px auto;
+  }
+
+  /* Modal */
+  .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    overflow-y: auto;
+    padding: 10px;
+    box-sizing: border-box;
+    animation: FadeIn 0.3s ease-out;
+  }
+
+  .modalContent {
+    max-width: 95%;
+    display: block;
+    margin: 20px auto;
+    padding: 15px;
+    width: 90%;
+    height: auto;
+    overflow-y: auto;
+    border-radius: 8px;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    background-color: white;
+    z-index: 1000;
+    animation: SlideIn 0.3s ease-out;
+    font-family: sans-serif;
+  }
 }

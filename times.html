@@ -1,247 +1,305 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Times da NBA</title>
   <link rel="stylesheet" href="css/times.css">
 </head>
+
 <body>
-<header id="top">
-    <img  id="logoBasket" src="img/LOGO.png" alt="Logo">
+  <header id="top">
+    <img id="logoBasket" src="img/LOGO.png" alt="Logo">
 
     <!-- Links do topo da pagina -->
     <a class="link_top" href="index.html">Notícias</a>
     <a class="link_top" href="calendario.html">Calendário</a>
     <a class="link_top" href="classificação.html">Classificação</a>
     <a class="link_top" href="times.html">Times</a>
-  
-</header>
+
+  </header>
   <header>
     <h1>Times da NBA</h1>
     <div class="filter-buttons">
       <button onclick="mostrarTodos()">Todos</button>
-      <button onclick="filtrarConferencia('leste')">Leste</button>
-      <button onclick="filtrarConferencia('oeste')">Oeste</button>
+      <button onclick="filtrarConferencia('pacifico')">Pácifico</button>
+      <button onclick="filtrarConferencia('atlantico')">Atlântico</button>
+      <button onclick="filtrarConferencia('central')">Central</button>
+      <button onclick="filtrarConferencia('sudoeste')">Sudoeste</button>
+      <button onclick="filtrarConferencia('noroeste')">Noroeste</button>
+      <button onclick="filtrarConferencia('sudeste')">Sudeste</button>
     </div>
   </header>
 
   <main id="times-container">
 
-    <!-- Conferência Leste -->
-    <section class="conferencia leste">
-      <h2>Conferência Leste</h2>
-
+    <section class="conferencia pacifico">
+      <!-- Conferência Pácifico -->
+      <h2>Pácifico</h2>
       <div class="times">
- 
 
-      <div class="time">
-  <img src="img/boston celtics.png" alt="golden state warriors" />
-  <span>Boston Celtics</span>
-</div>
+        <!-- Golden State Warriors -->
+        <a class="time" href="https://en.wikipedia.org/wiki/Golden_State_Warriors">
+          <img src="img/golden State.png" alt="golden state warriors" />
+          <span>Golden State Warriors</span>
+        </a>
 
-<div class="time">
-  <img src="img/chigago bulls.png" alt="La Clippers" />
-  <span>Chicago Bulls</span>
-</div>
+        <!-- Los Angeles Lakers -->
+        <a class="time" href="https://en.wikipedia.org/wiki/Los_Angeles_Lakers">
+          <img src="img/lakers.png" alt="Los Angeles Lakers" />
+          <span>Los Angeles Lakers</span>
+        </a>
 
- <div class="time">
-  <img src="img/Cleveland Cavaliers.png" alt="Los Angeles Lakers" />
-  <span>Cleveland Cavaliers</span>
-</div>
+        <!-- LA Clippers -->
+        <a class="time" href="https://en.wikipedia.org/wiki/Los_Angeles_Clippers">
+          <img src="img/La clippers.png" alt="La Clippers" />
+          <span>LA Clippers</span>
+        </a>
 
-    <div class="time">
-  <img src="img/brookylin.png" alt="Phoenix Suns" />
-  <span>Brooklyn Nets</span>
-</div>
+        <!-- Sacramento Kings -->
+        <a class="time" href="https://en.wikipedia.org/wiki/Sacramento_Kings">
+          <img src="img/sacramento kings.png" alt="Sacramento Kings" />
+          <span>Sacramento Kings</span>
+        </a>
 
-   <div class="time">
-  <img src="img/Philadelphia 76ers.png" alt="Sacramento Kings" />
-  <span>Philadelphia 76ers</span>
-</div>
-
-</div>
-
- <div class="times">
- 
-
-      <div class="time">
-  <img src="img/toronto raptors.png" alt="golden state warriors" />
-  <span>Toronto Raptors</span>
-</div>
-
-<div class="time">
-  <img src="img/Detroit Pistons.png" alt="La Clippers" />
-  <span>Detroit Pistons</span>
-</div>
-
- <div class="time">
-  <img src="img/Indiana Pacers.png" alt="Los Angeles Lakers" />
-  <span>Indiana Pacers</span>
-</div>
-
-    <div class="time">
-  <img src="img/Milwaukee Bucks.png" alt="Phoenix Suns" />
-  <span>Milwaukee Bucks</span>
-</div>
-
-   <div class="time">
-  <img src="img/Atlanta Hawks.png" alt="Sacramento Kings" />
-  <span>Atlanta Hawks</span>
-</div>
-
-</div>
-
- <div class="times">
- 
-
-      <div class="time">
-  <img src="img/Charlotte Hornets.png" alt="golden state warriors" />
-  <span>Charlotte Hornets</span>
-</div>
-
-<div class="time">
-  <img src="img/Miami Heat.png" alt="La Clippers" />
-  <span>Miami Heat</span>
-</div>
-
- <div class="time">
-  <img src="img/Orlando Magic.png" alt="Los Angeles Lakers" />
-  <span>Orlando Magic</span>
-</div>
-
-    <div class="time">
-  <img src="img/Washington Wizards.png" alt="Phoenix Suns" />
-  <span>Washington Wizards</span>
-</div>
-
-   <div class="time">
-  <img src="img/new york.png" alt="Sacramento Kings" />
-  <span>New York Knicks</span>
-</div>
-
-</div>
+        <!-- Phoenix -->
+        <a class="time" href="https://en.wikipedia.org/wiki/Phoenix">
+          <img src="img/Phoenix Suns.png" alt="Phoenix Suns" />
+          <span>Phoenix </span>
+        </a>
+      </div>
     </section>
 
-      
-
-      
-
-    <!-- Conferência Oeste -->
-    <section class="conferencia oeste">
-      <h2>Conferência Oeste</h2>
+    <section class="conferencia central">
+      <!-- Conferência Central -->
+      <h2>Central</h2>
+      <div class="times">
 
 
-<div class="times">
-    
-      <div class="time">
-  <img src="img/denver nuggets.png" alt="golden state warriors" />
-  <span>Denver Nuggets</span>
-</div>
+        <!-- Chicago Bulls -->
+        <a class="time" href="https://en.wikipedia.org/wiki/Chicago_Bulls">
+          <img src="img/chigago bulls.png" alt="Chicago Bulls" />
+          <span>Chicago Bulls</span>
+        </a>
 
-<div class="time">
-  <img src="img/minnessota.png" alt="La Clippers" />
-  <span>Minnesota Timberwolves</span>
-</div>
+        <!-- Detroit Pistons -->
+        <a class="time" href="https://en.wikipedia.org/wiki/Detroit_Pistons">
+          <img src="img/Detroit Pistons.png" alt="Detroit Pistons" />
+          <span>Detroit Pistons</span>
+        </a>
 
- <div class="time">
-  <img src="img/Oklahoma City Thunder.png" alt="Los Angeles Lakers" />
-  <span>Oklahoma City Thunder</span>
-</div>
+        <!-- Indiana Pacers -->
+        <a class="time" href="https://en.wikipedia.org/wiki/Indiana_Pacers">
+          <img src="img/Indiana Pacers.png" alt="Indiana Pacers" />
+          <span>Indiana Pacers</span>
+        </a>
 
-    <div class="time">
-  <img src="img/Portland Trail Blazers.png" alt="Phoenix Suns" />
-  <span>Portland Trail Blazers</span>
-</div>
+        <!-- Milwaukee Bucks -->
+        <a class="time" href="https://en.wikipedia.org/wiki/Milwaukee_Bucks">
+          <img src="img/Milwaukee Bucks.png" alt="Milwaukee Bucks" />
+          <span>Milwaukee Bucks</span>
+        </a>
 
-<div class="time">
-  <img src="img/Utah Jazz.png" alt="Phoenix Suns" />
-  <span>Utah Jazz</span>
-</div>
+        <!-- Cleveland Cavaliers -->
+        <a class="time" href="https://en.wikipedia.org/wiki/Cleveland_Cavaliers">
+          <img src="img/Cleveland Cavaliers.png" alt="Cleveland Cavaliers" />
+          <span>Cleveland Cavaliers</span>
+        </a>
+      </div>
+    </section>
 
-    </div>
+    <section class="conferencia noroeste">
+      <!-- Conferência Noroeste -->
+      <h2>Noroeste</h2>
+      <div class="times">
 
- <div class="times">
+        <!-- Denver Nuggets -->
+        <a class="time" href="https://en.wikipedia.org/wiki/Denver_Nuggets">
+          <img src="img/denver nuggets.png" alt="Denver Nuggets" />
+          <span>Denver Nuggets</span>
+        </a>
 
-      <div class="time">
-  <img src="img/golden State.png" alt="golden state warriors" />
-  <span>Golden State Warriors</span>
-</div>
+        <!-- Minnesota Timberwolves -->
+        <a class="time" href="https://en.wikipedia.org/wiki/Minnesota_Timberwolves">
+          <img src="img/minnessota.png" alt="Minnesota Timberwolves" />
+          <span>Minnesota Timberwolves</span>
+        </a>
 
-<div class="time">
-  <img src="img/La clippers.png" alt="La Clippers" />
-  <span>LA Clippers</span>
-</div>
+        <!-- Utah Jazz -->
+        <a class="time" href="https://en.wikipedia.org/wiki/Utah_Jazz">
+          <img src="img/Utah Jazz.png" alt="Utah Jazz" />
+          <span>Utah Jazz</span>
+        </a>
 
- <div class="time">
-  <img src="img/lakers.png" alt="Los Angeles Lakers" />
-  <span>Los Angeles Lakers</span>
-</div>
+        <!-- Portland Trail Blazers -->
+        <a class="time" href="https://en.wikipedia.org/wiki/Portland_Trail_Blazers">
+          <img src="img/Portland Trail Blazers.png" alt="Portland Trail Blazers" />
+          <span>Portland Trail Blazers</span>
+        </a>
 
-    <div class="time">
-  <img src="img/Phoenix Suns.png" alt="Phoenix Suns" />
-  <span>Phoenix </span>
-</div>
+        <!-- Oklahoma City Thunder -->
+        <a class="time" href="https://en.wikipedia.org/wiki/Oklahoma_City_Thunder">
+          <img src="img/Oklahoma City Thunder.png" alt="Oklahoma City Thunder" />
+          <span>Oklahoma City Thunder</span>
+        </a>
+      </div>
+    </section>
 
-   <div class="time">
-  <img src="img/sacramento kings.png" alt="Sacramento Kings" />
-  <span>Sacramento Kings</span>
-</div>
+    <section class="conferencia sudoeste">
+      <!-- Conferência Sudoeste -->
+      <h2>Sudoeste</h2>
 
-</div>
+      <div class="times">
 
-<div class="times">
- 
+        <!-- Dallas Mavericks -->
+        <a class="time" href="https://en.wikipedia.org/wiki/Dallas_Mavericks">
+          <img src="img/Dallas Mavericks.png" alt="Dallas Mavericks" />
+          <span>Dallas Mavericks</span>
+        </a>
 
-      <div class="time">
-  <img src="img/Dallas Mavericks.png" alt="golden state warriors" />
-  <span>Dallas Mavericks</span>
-</div>
+        <!-- Houston Rockets -->
+        <a class="time" href="https://en.wikipedia.org/wiki/Houston_Rockets">
+          <img src="img/Houston Rockets.png" alt="Houston Rockets" />
+          <span>Houston Rockets</span>
+        </a>
 
-<div class="time">
-  <img src="img/Houston Rockets.png" alt="La Clippers" />
-  <span>Houston Rockets</span>
-</div>
+        <!-- Memphis Grizzlies -->
+        <a class="time" href="https://en.wikipedia.org/wiki/Memphis_Grizzlies">
+          <img src="img/Memphis Grizzlies.png" alt="Memphis Grizzlies" />
+          <span>Memphis Grizzlies</span>
+        </a>
 
- <div class="time">
-  <img src="img/Memphis Grizzlies.png" alt="Los Angeles Lakers" />
-  <span>Memphis Grizzlies</span>
-</div>
+        <!-- New Orleans Pelicans -->
+        <a class="time" href="https://en.wikipedia.org/wiki/New_Orleans_Pelicans">
+          <img src="img/New Orleans Pelicans.png" alt="New Orleans Pelicans" />
+          <span>New Orleans Pelicans</span>
+        </a>
 
-    <div class="time">
-  <img src="img/New Orleans Pelicans.png" alt="Phoenix Suns" />
-  <span>New Orleans Pelicans</span>
-</div>
+        <!-- San Antonio Spurs -->
+        <a class="time" href="https://en.wikipedia.org/wiki/San_Antonio_Spurs">
+          <img src="img/San Antonio Spurs.png" alt="San Antonio Spurs" />
+          <span>San Antonio Spurs</span>
+        </a>
+      </div>
+    </section>
 
-   <div class="time">
-  <img src="img/San Antonio Spurs.png" alt="Sacramento Kings" />
-  <span>San Antonio Spurs</span>
-</div>
+    <section class="conferencia sudeste">
+      <!-- Conferência Sudeste -->
+      <h2>Sudeste</h2>
 
-</div>
+      <div class="times">
 
-      
+        <!-- Charlotte Hornets -->
+        <a class="time" href="https://en.wikipedia.org/wiki/Charlotte_Hornets">
+          <img src="img/Charlotte Hornets.png" alt="Charlotte Hornets" />
+          <span>Charlotte Hornets</span>
+        </a>
+
+        <!-- Miami Heat -->
+        <a class="time" href="https://en.wikipedia.org/wiki/Miami_Heat">
+          <img src="img/Miami Heat.png" alt="Miami Heat" />
+          <span>Miami Heat</span>
+        </a>
+
+        <!-- Orlando Magic -->
+        <a class="time" href="https://en.wikipedia.org/wiki/Orlando_Magic">
+          <img src="img/Orlando Magic.png" alt="Orlando Magic" />
+          <span>Orlando Magic</span>
+        </a>
+
+        <!-- Washington Wizards -->
+        <a class="time" href="https://en.wikipedia.org/wiki/Washington_Wizards">
+          <img src="img/Washington Wizards.png" alt="Washington Wizards" />
+          <span>Washington Wizards</span>
+        </a>
+
+        <!-- Atlanta Hawks -->
+        <a class="time" href="https://en.wikipedia.org/wiki/Atlanta_Hawks">
+          <img src="img/Atlanta Hawks.png" alt="Atlanta Hawks" />
+          <span>Atlanta Hawks</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="conferencia atlantico">
+      <!-- Conferência Atlântico -->
+      <h2>Atlântico</h2>
+      <div class="times">
+
+        <!-- Boston Celtics -->
+        <a class="time" href="https://en.wikipedia.org/wiki/Boston_Celtics">
+          <img src="img/boston celtics.png" alt="Boston Celtics" />
+          <span>Boston Celtics</span>
+        </a>
+
+        <!-- Toronto Raptors -->
+        <a class="time" href="https://en.wikipedia.org/wiki/Toronto_Raptors">
+          <img src="img/toronto raptors.png" alt="Toronto Raptors" />
+          <span>Toronto Raptors</span>
+        </a>
+
+        <!-- New York Knicks -->
+        <a class="time" href="https://en.wikipedia.org/wiki/New_York_Knicks">
+          <img src="img/new york.png" alt="New York Knicks" />
+          <span>New York Knicks</span>
+        </a>
+
+        <!-- Philadelphia 76ers -->
+        <a class="time" href="https://en.wikipedia.org/wiki/Philadelphia_76ers">
+          <img src="img/Philadelphia 76ers.png" alt="Philadelphia 76ers" />
+          <span>Philadelphia 76ers</span>
+        </a>
+
+        <!-- Brooklyn Nets -->
+        <a class="time" href="https://en.wikipedia.org/wiki/Brooklyn_Nets">
+          <img src="img/brookylin.png" alt="Brooklyn Nets" />
+          <span>Brooklyn Nets</span>
+        </a>
+      </div>
     </section>
 
   </main>
 
+  </div>
+
   <script>
+
+    let indiceAtual = 0;
+    let secoesFiltradas = [];
+    let conferenciaAtual = '';
+
     function filtrarConferencia(conferencia) {
-  const secoes = document.querySelectorAll('.conferencia');
+      const todaSecoes = document.querySelectorAll('.conferencia');
 
-  secoes.forEach(secao => {
-    if (secao.classList.contains(conferencia)) {
-      secao.style.display = 'block';
-    } else {
-      secao.style.display = 'none';
+      if (conferencia !== conferenciaAtual) {
+        conferenciaAtual = conferencia;
+        indiceAtual = 0;
+        secoesFiltradas = Array.from(document.querySelectorAll(`.conferencia.${conferencia}`));
+      }
+
+      todaSecoes.forEach(secao => {
+        secao.style.display = 'none';
+
+      });
+
+      if (secoesFiltradas.length > 0) {
+        secoesFiltradas[indiceAtual].style.display = 'block';
+
+        indiceAtual = (indiceAtual + 1) % secoesFiltradas.length;
+      }
+
     }
-  });
-}
 
-function mostrarTodos() {
-  const secoes = document.querySelectorAll('.conferencia');
-  secoes.forEach(secao => secao.style.display = 'block');
-}
+    function mostrarTodos() {
+      const secoes = document.querySelectorAll('.conferencia');
+      secoes.forEach(secao => secao.style.display = 'block');
+
+      indiceAtual = 0;
+      secoesFiltradas = [];
+      conferenciaAtual = '';
+    }
   </script>
 </body>
+
 </html>
