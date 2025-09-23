@@ -1,0 +1,486 @@
+body {                /*Corpo do site*/
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: rgb(238, 230, 230);
+ }
+
+#top { 
+    position: absolute; 
+    width: 100%;              /*Barra do topo*/
+    height: 50px;
+    background-color: rgba(26, 25, 24, 0.836);
+    text-align: center;
+    top: 0;
+    display: flex;
+    justify-content: flex-start;
+    box-shadow: 0 5px 6px rgba(0, 0, 0, 0.3);
+}
+
+.logoBasket {               /*Logo do site*/
+    width: 85px;
+    height: 85px;
+    margin-right: 20px;
+    padding-left:10px;
+    margin-top: -17px;
+}
+.link_top{
+    margin-top: 20px;
+    margin-right: 40px;
+    color: white;
+    text-decoration: none;
+}
+
+.link_top:hover{
+    color: rgb(247, 163, 107);
+    border-bottom: 5px solid rgba(209, 86, 4, 0.911);
+    border-radius: 5px;
+}
+/*Responsividade da barra pra celulares*/
+@media (max-width: 600px) {
+  .link_top {
+    margin-right: 15px;
+    font-size: 14px;
+  }
+  .logoBasket {
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+    padding-left: 5px;
+    margin-top: -10px;
+  }
+}
+
+
+#title2 {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     height: calc(50vh - 60px);
+     margin: 0 auto; 
+     width: 100%;
+     color: rgb(119, 112, 112);
+     font-family: sans-serif;
+}
+                                /*-------COMEÇO DAS NOTÍCIAS---------*/
+#centro {
+    width: 100%;
+    height: auto; /* metade da tela */
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.sessao {
+    display: flex;
+    gap: 20px; /* espaço entre os blocos */
+    justify-content: center; /* centraliza todos no centro do container */
+    align-items: center;
+    margin-top: 20px;
+}
+
+.noticia1 {
+    width: 90vw;
+    max-width: 520px;
+    height: 360px;;
+    background-color: rgb(207, 202, 202);
+    border: 2px solid gray;
+    display: flex; /* agora sim! */
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    display: flex;
+    font-family: sans-serif;
+    box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.3);
+
+}
+
+.noticia2 {
+    width: 90vw;
+    max-width: 520px;
+    height: 360px;;
+    background-color: rgb(207, 202, 202);
+    border: 2px solid gray;
+    display: flex; /* agora sim! */
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    display: flex;
+    font-family: sans-serif;
+    box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.3);
+
+}
+
+.noticia3 {
+    width: 90vw;
+    max-width: 520px;
+    height: 360px;;
+    background-color: rgb(207, 202, 202);
+    border: 2px solid gray;
+    display: flex; /* agora sim! */
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    display: flex;
+    font-family: sans-serif;
+    box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.3);
+
+}
+
+.noticia4 {
+    width: 90vw;
+    max-width: 520px;
+    height: 360px;;
+    background-color: rgb(207, 202, 202);
+    border: 2px solid gray;
+    display: flex; /* agora sim! */
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    display: flex;
+    font-family: sans-serif;
+     box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.3);
+
+}
+
+/* Responsividade completa */
+@media (max-width: 768px) {
+  /* Barra do topo */
+  #top {
+    width: 100%;
+    left: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  /* Logo */
+  #logoBasket {
+    width: 60px;
+    height: 60px;
+    margin: 5px 0;
+  }
+
+  /* Links do topo */
+  .link_top {
+    margin: 5px 5px;
+    font-size: 13px;
+  }
+
+  /* Container das notícias */
+  .sessao {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    width: 100%;
+  }
+
+  /* Notícias individuais */
+  .noticia1, .noticia2, .noticia3, .noticia4 {
+    width: 95%;
+    max-width: 520px;
+    height: auto; /* altura se ajusta ao conteúdo */
+    margin: 10px auto;
+  }
+
+  /* Modal */
+  .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    overflow-y: auto;
+    padding: 10px;
+    box-sizing: border-box;
+    animation: FadeIn 0.3s ease-out;
+  }
+
+  .modalContent {
+    max-width: 95%;
+    display: block;
+    margin: 20px auto;
+    padding: 15px;
+    width: 90%;
+    height: auto;
+    overflow-y: auto;
+    border-radius: 8px;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    background-color: white;
+    z-index: 1000;
+    animation: SlideIn 0.3s ease-out;
+    font-family: sans-serif;
+  }
+}
+
+                                        /*CONFIGURAÇÃO DAS IMAGENS*/
+.noticia1 img {
+  width: 100%;
+  height: 70%; /* imagem ocupa 70% da altura */
+  object-fit: cover;
+}
+
+.noticia2 img {
+  width: 100%;
+  height: 70%; 
+  object-fit: cover;
+}
+.noticia3 img {
+  width: 100%;
+  height: 70%; 
+  object-fit: cover;
+}
+.noticia4 img {
+  width: 100%;
+  height: 70%; 
+  object-fit: cover;
+}
+
+                      /*Box containing video + controls */
+  .videoWrapper {
+    max-width: 100%;          /*ensures that it does exceed the width of the parent container*/
+    margin: auto;             /*horizontally centralizes.*/
+    background: #e0e0e0;   
+    padding: 15px;            /*interior space*/
+    border-radius: 8px;       
+  }
+  .videoModal {
+    width: 100%;
+    display: block;
+    border-radius: 5px;
+  }
+  .videoControls {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+ 
+
+  .timer {
+    width: 60px;
+    font-family: monospace;
+    text-align: center;
+  }
+                              /*progress bar and volume*/
+  .progress {
+  width: 100%;  /* 100% da viewport */
+  margin: 0;     /* tira margem */
+  display: block; /* para garantir que respeite a largura */
+  -webkit-appearance: none; /* pra melhorar estilo */
+  height: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: rgba(0,0,0,0.1);
+}
+
+
+.progress::-webkit-slider-thumb {           /*orange dot on the progress bar*/
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: rgba(129, 68, 27, 0.911);   /*  color dot (orange) */
+  border: 2px solid rgb(247, 163, 107);   /*color border the dot*/
+  cursor: pointer;
+  margin-top: -4px;                         /* Adjust vertically */
+}
+.volume {
+  width: 100px;
+  height: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+  outline: none;
+  background: rgba(0,0,0,0.1); /* cor padrão cinza */
+}
+
+.volume::-webkit-slider-thumb {           /*orange dot on the progress bar*/
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: rgba(129, 68, 27, 0.911);   /*  color dot (orange) */
+  border: 2px solid rgb(247, 163, 107);   /*color border the dot*/
+  cursor: pointer;
+  margin-top: -4px;
+}                   
+                              /* END the progress bar and volume*/
+
+
+                     /*DESCRIPTION, TITLE, PARAGRAPH, AND BUTTON SETTINGS*/
+.descricao {
+  background-color: white;
+  height: 30%;
+  overflow-y: auto;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 8px;
+  border-top: 2px solid gray;
+  position: relative;
+}
+
+.tituloNoticia {
+  margin: 0;
+  font-size: 1.2rem;
+  color: rgb(24, 23, 23);
+  font-family: sans-serif;
+}
+
+.resumoNoticia {
+  margin: 0;
+  font-size: 1rem;
+  color: #555;
+  
+}
+.botao-container {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+.saibaMais {
+      padding: 6px 15px;
+      border: none;
+      background-color: rgba(26, 25, 24, 0.836);
+      color: white;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;  
+}
+
+.saibaMais {
+  transition: transform 0.2s ease;
+}
+.saibaMais:hover {
+      padding: 6px 15px;
+      border: none;
+      background-color: rgba(66, 66, 65, 0.836);
+      color: rgb(255, 255, 255);
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;  
+}
+
+.pulando {
+  transform: scale(1.2); /* aumenta 20% */
+}  
+                    /*configurações das modais*/
+.modal {
+  display: none; 
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100vw; 
+  height: 100vh; 
+  background-color: rgba(0, 0, 0, 0.5); 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  z-index: 999; 
+  overflow-y: auto;
+}
+
+.modalContent {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 600px;
+  width: 90%; /* responsivo */
+  box-shadow: 0 0 10px rgba(0,0,0,0.25);
+  position: relative;
+}
+
+.buttonClose {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #aaa;
+  transition: color 0.3s ease;
+}
+
+.buttonClose {
+  color: red;
+}
+
+.modalContent img {
+  width: 100%;
+  display: block;
+  margin: 0 auto 15px auto;
+  border-radius: 8px;
+  
+}
+                                                    /*-------FIM DAS NOTÍCIAS---------*/
+
+/* Responsividade para telas pequenas */
+@media (max-width: 768px) {
+    
+    #sessao {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .noticia1 {
+        width: 90vw;              /* 90% da largura da viewport */
+        max-width: 520px;         /* não fica maior que 520px */
+        height: 300px; 
+    }
+}
+
+#final {
+  margin-top: 20px;
+  bottom: 0; /* também pode remover */
+  background-color: rgba(26, 25, 24, 0.836); /* exemplo */
+  padding: 20px;
+  text-align: center;
+}
+
+#termos {
+  text-decoration: none;
+  color: white;
+ 
+}
+
+#termos:hover{
+  text-decoration: none;
+  color: rgb(247, 163, 107);
+  
+}

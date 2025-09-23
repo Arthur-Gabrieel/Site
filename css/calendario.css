@@ -1,0 +1,153 @@
+ body { 
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    background-color: rgb(238, 230, 230);
+ }
+
+  #top { 
+    position: absolute; 
+    width: 100%;
+    height: 50px;
+    background-color: rgba(26, 25, 24, 0.836);
+    text-align: center;
+    top: 0;
+    display: flex;
+    justify-content: flex-start;
+    box-shadow: 0 5px 6px rgba(0, 0, 0, 0.3);
+}
+
+#logoBasket {               /*Logo do site*/
+    width: 85px;
+    height: 85px;
+    margin-right: 20px;
+    padding-left:10px;
+    margin-top: -17px;
+}
+.link_top{
+    margin-top: 20px;
+    margin-right: 40px;
+    color: white;
+    text-decoration: none;
+}
+
+.link_top:hover{
+   color: rgb(247, 163, 107);
+    border-bottom: 5px solid rgba(209, 86, 4, 0.911);
+    border-radius: 5px;
+}
+/*Responsividade da barra pra celulares*/
+@media (max-width: 600px) {
+  .link_top {
+    margin-right: 15px;
+    font-size: 14px;
+  }
+  #logoBasket {
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+    padding-left: 5px;
+    margin-top: 10px;
+
+  }
+  .calendario {
+    width: 95%;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: none;
+    margin-top: 80px;
+
+  }
+  .calendario-grade {
+    grid-template-columns: repeat(7, 1fr);
+    gap: 0.5px;
+    overflow-x: auto; 
+    background: #ccc;
+  }
+  .calendario-header {
+    font-size: 1em;
+    padding: 10px;
+    background: rgba(26, 25, 24, 0.836);
+  }
+  .dia-nome,
+  .dia {
+    padding: 10px;
+    font-size: 0.8em;
+  }
+  .evento {
+    font-size: 0.7em;
+    padding: 2px;
+    margin-top: 3px;
+    border-radius: 3px;
+    background: rgba(199, 100, 34, 0.911);
+    
+  }
+}
+  
+
+#title2 {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     height: calc(50vh - 60px);
+     margin: 0 auto; 
+     width: 100%;
+     color: rgb(119, 112, 112);
+     font-family: sans-serif;
+}
+
+    .calendario {
+      max-width: 800px;
+      margin: 20px auto;
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+      margin-top: 100px;
+    }
+
+    .calendario-header {
+      background: rgba(26, 25, 24, 0.836);;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      font-size: 1.2em;
+    }
+
+    .calendario-grade {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 1px;
+      background: #ccc;
+    }
+
+    .dia-nome,
+    .dia {
+      background: rgba(87, 87, 87, 0.836);
+      padding: 15px;
+      text-align: center;
+
+    }
+
+    .dia-nome {
+      font-weight: bold;
+      background: #eee;
+    }
+
+    .evento {
+      margin-top: 5px;
+      padding: 3px;
+      font-size: 0.8em;
+      border-radius: 4px;
+      color: #fff;
+      background: rgba(199, 100, 34, 0.911);
+    }
+
+    .tamanho {
+      width: 90px;
+    }
+
+   

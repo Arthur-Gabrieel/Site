@@ -1,0 +1,159 @@
+body { 
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    font-family: sans-serif;
+    background-color: rgb(238, 230, 230);
+ }
+
+
+ #top { 
+    position: absolute; 
+    width: 100%;
+    height: 50px;
+    background-color: rgba(26, 25, 24, 0.836);
+    text-align: center;
+    top: 0;
+    display: flex;
+    justify-content: flex-start;
+     box-shadow: 0 5px 6px rgba(0, 0, 0, 0.3);
+
+}
+
+#logoBasket {               /*Logo do site*/
+    width: 85px;
+    height: 85px;
+    margin-right: 20px;
+    padding-left:10px;
+    margin-top: -17px;
+}
+.link_top{
+    margin-top: 20px;
+    margin-right: 40px;
+    color: white;
+    text-decoration: none;
+}
+
+.link_top:hover{
+   color: rgb(247, 163, 107);
+    border-bottom: 5px solid rgba(209, 86, 4, 0.911);
+    border-radius: 5px;
+}
+
+/*Responsividade da barra pra celulares*/
+@media (max-width: 600px) {
+  .link_top {
+    margin-right: 15px;
+    font-size: 14px;
+  }
+  .logoBasket {
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+    padding-left: 5px;
+    margin-top: -10px;
+  }
+  .grade {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 0px 10px;
+    margin-top: 20px;
+    box-shadow: rgba(0, 0, 0,);
+    box-shadow: none;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    width: 95%;
+  }
+}
+
+
+#title2 {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     height: calc(50vh - 60px);
+     margin: 0 auto; 
+     width: 100%;
+     color: rgb(119, 112, 112);
+     font-family: sans-serif;
+}
+
+
+    .grade {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin-top: 100px;
+    }
+
+    .cartao {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      position: relative;
+      transition: transform 0.2s;
+    }
+
+    .cartao:hover {
+      transform: translateY(-5px);
+    }
+
+    .cartao .posicao {
+      font-size: 1.5em;
+      font-weight: bold;
+      color: rgba(199, 109, 49, 0.911);
+    }
+
+    .cartao img {
+      width: 60px;
+      height: 60px;
+      margin: 10px 0;
+    }
+
+    .cartao .nome-time {
+      font-size: 1.2em;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    .estatisticas {
+      text-align: left;
+      margin-top: 10px;
+      font-size: 0.9em;
+    }
+
+    .barra-container {
+      background: #eee;
+      border-radius: 8px;
+      overflow: hidden;
+      margin-top: 5px;
+    }
+
+    .barra {
+      height: 15px;
+      background: #0650be85;
+      width: 0%;
+    }
+
+    .cartao.pos1 .barra {
+      background: rgb(255, 196, 0);
+    }
+
+    .cartao.pos2 .barra {
+      background: rgba(253, 238, 21, 0.945);
+    }
+
+    .cartao.pos3 .barra {
+      background: #ffe81ada;
+    }
+    header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
