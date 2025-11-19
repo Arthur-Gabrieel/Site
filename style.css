@@ -840,12 +840,14 @@ nav a {
 
     /*-------------------------------- Responsividade Apresentação ---------------------------------*/
 
-    html, body {
-   overflow-x: hidden;
+
+ 
+    
+
+#body {
+      overflow-x: hidden;
     touch-action: pan-y;
      scroll-behavior: smooth;
-}
-#body {
     width: 100%;
     height: auto;
     display: flex;
@@ -1050,13 +1052,14 @@ nav a {
 
     #academyBox {
         width: 200px;
-        height: auto;
+        height: 250px;
+        margin-left: -200px;
        
     }
 
     #academyBox2 {
          width: 200px;
-        height: auto;
+        height: 250px;
     }
 
 
@@ -1123,11 +1126,15 @@ nav a {
     #technology {
       position: relative;   
     margin-top: -600px;
-     margin-left: 680px;
+     margin-left: 610px;
     margin-right: auto;
     width: 50%; /* ou um valor fixo, ex: 600px */
    
    
+    }
+
+    #titleTechnology {
+        padding-left: 30px;
     }
 
     #technologyBox {
@@ -1145,9 +1152,9 @@ nav a {
         font-style: italic;
         color: white;
         position: relative;
-        top: -270px;
+        top: -260px;
         font-size: 14px;
-        left: 0px;
+        left: -50px;
         margin-top: -40px;
          white-space: nowrap;
 
@@ -1183,13 +1190,13 @@ nav a {
      #contact {
        position: relative;   
     margin-top: -800px;
-     margin-left: 150px;
+     margin-left: 80px;
     margin-right: auto;
     width: 100%; /* ou um valor fixo, ex: 600px */
      }
 
     #contactBox {
-        width: 150px;
+        width: 180px;
         height: 200px;
         background-color: rgb(16, 17, 17);
         display: flex;
