@@ -931,11 +931,11 @@ nav a {
     /*-------------------------------- Responsividade Sessão Sobre Mim ---------------------------------*/
 
     #aboutMe {
-        position: absolute;
-        left: 300px;
-        transform: translateY(1100px);
-        /* empurra pra baixo sem quebrar layout */
-        padding: 50px 20px;
+    position: relative; /* melhor que absolute no mobile */
+    margin-left: -110px;
+    height: auto;
+    margin-top: 550px; /* empurra naturalmente para baixo */
+    padding: 50px 20px;
 
     }
 
@@ -976,7 +976,11 @@ nav a {
 
     /*------------------------------- Responsividade Sessão Project -----------------------------------*/
     #projects {
-        transform: translateY(1200px);
+    position: relative;   
+    margin-top: -900px;
+     margin-left: 650px;
+    margin-right: auto;
+    width: 100%; /* ou um valor fixo, ex: 600px */
     }
 
     #titleProject {
@@ -1031,12 +1035,10 @@ nav a {
 
     /*------------------------------------ Responsividade Formação --------------------------------------*/
     #Training {
-        position: absolute;
-        left: 50px;
-        width: 100%;
-        transform: translateY(2100px);
-        /* empurra pra baixo sem quebrar layout */
-        padding: 50px 20px;
+    position: relative;   
+    margin-top: -700px;
+     margin-left: 450px;
+     width: 50%;
     }
 
     .buttonFC {
@@ -1044,6 +1046,17 @@ nav a {
         gap: 40px;
         margin-top: -50px;
         margin-left: 10px;
+    }
+
+    #academyBox {
+        width: 200px;
+        height: auto;
+       
+    }
+
+    #academyBox2 {
+         width: 200px;
+        height: auto;
     }
 
 
@@ -1054,6 +1067,8 @@ nav a {
         align-items: center;
         gap: 20px;
         padding-right: 80px;
+        margin-left: -260px;
+      
     }
 
     .tabs2 {
@@ -1106,21 +1121,22 @@ nav a {
 
     /*------------------------------- Responsividade Sessão Tecnologia -----------------------------------*/
     #technology {
-        position: absolute;
-        left: 20px;
-        width: 100%;
-        transform: translateY(2700px);
-        /* empurra pra baixo sem quebrar layout */
-        padding: 50px 20px;
+      position: relative;   
+    margin-top: -600px;
+     margin-left: 680px;
+    margin-right: auto;
+    width: 50%; /* ou um valor fixo, ex: 600px */
+   
+   
     }
 
     #technologyBox {
-        width: 95%;
+        width: 40%;
         height: auto;
         flex-direction: column;
         padding: 20px;
-        margin-top: 120px;
-        margin-left: -140px;
+        margin-top: 100px;
+        margin-left: -320px;
     }
 
     #textTechnology {
@@ -1129,8 +1145,9 @@ nav a {
         font-style: italic;
         color: white;
         position: relative;
-        top: -550px;
-        left: 150px;
+        top: -270px;
+        font-size: 14px;
+        left: 0px;
         margin-top: -40px;
          white-space: nowrap;
 
@@ -1164,15 +1181,12 @@ nav a {
      /*------------------------------- Responsividade Sessão Contato -----------------------------------*/
 
      #contact {
-        position: absolute;
-        left: 60px;
-        width: 100%;
-        transform: translateY(4250px);
-        padding: 50px 20px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+       position: relative;   
+    margin-top: -800px;
+     margin-left: 150px;
+    margin-right: auto;
+    width: 100%; /* ou um valor fixo, ex: 600px */
+     }
 
     #contactBox {
         width: 150px;
