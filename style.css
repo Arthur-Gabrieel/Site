@@ -270,7 +270,7 @@ nav a {
 
 #projects {
     position: absolute;
-    left: 50px;
+    left: 100px;
     width: 100%;
     transform: translateY(900px);
     /* empurra pra baixo sem quebrar layout */
@@ -289,32 +289,19 @@ nav a {
     margin-left: 10px;
 }
 
-.projectCarousel {
+#projectCarousel {
     width: 100%;
     scroll-behavior: smooth;
     display: flex;
     overflow-x: auto;
     overflow-y: hidden;
-    gap: 20px;
+    gap: 60px;
     height: auto;
-}
 
-/* Remove barra nativa em todos os navegadores */
-
-.projectCarousel {
-    -ms-overflow-style: none;
-    /* Internet Explorer e Edge antigo */
-    scrollbar-width: none;
-    /* Firefox */
 }
 
 
-.projectCarousel::-webkit-scrollbar {
-    display: none;
-    /* Chrome, Safari, Edge */
-}
-
-.projectCarouselWrapper {
+#projectCarouselWrapper {
     width: 100%;
     position: relative;
     margin-bottom: 20px;
@@ -958,8 +945,9 @@ nav a {
     #titleAbout {
         position: relative;
         right: 60px;
-        margin-top: 100px;
+        margin-top: 120px;
         font-size: 30px;
+        margin-right: 13px;
     }
 
     #aboutBox {
@@ -980,65 +968,42 @@ nav a {
     #projects {
     position: relative;   
     margin-top: -900px;
-     margin-left: 650px;
+     margin-left: 170px;
     margin-right: auto;
     width: 100%; /* ou um valor fixo, ex: 600px */
+    display: flex;
+    flex-direction: column; /* empilha os elementos verticalmente */
+    gap: 30px; /* espaço entre os projetos */
     }
 
     #titleProject {
-        margin-left: 10px;
+        margin-left: 70px;
+        margin-top: 20px;
     }
-
     #textProject1 {
-        margin-left: 20px;
+        margin-left: 30px;
     }
 
-    .projectCards {
-        flex: 0 0 auto;
+    #projectCarouselWrapper {
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 200px;
+    flex-direction: column; /* empilha os elementos verticalmente */
+    gap: 30px; /* espaço entre os projetos */
+    }
+
+    #projectCarousel {
+        width: 100%;
         height: auto;
-        background-color: rgb(19, 20, 20);
-        gap: 20px;
-        border-radius: 10px;
-
+        position: static;
+         display: flex;
+    flex-direction: column; /* empilha os elementos verticalmente */
+    gap: 30px; /* espaço entre os projetos */
     }
 
-    .projectsImage1 {
-        width: 80px;
-        border-radius: 5px;
-        object-fit: cover;
-        position: relative;
-        top: 5px;
-    }
-
-    .projectsImage2 {
-         width: 150px;
-         height: 80px;
-        border-radius: 5px;
-        object-fit: cover;
-        position: relative;
-        top: 5px;
-
-    }
-
-    .projectWord {
-        font-family: 'Montserrat', sans-serif;
-        font-size: 10px;
-        font-weight: 200;
-        font-style: italic;
-        color: white;
-        font-size: 16px;
-        padding: 10px;
-
-    }
 
     /*------------------------------------ Responsividade Formação --------------------------------------*/
     #Training {
     position: relative;   
-    margin-top: -700px;
+    margin-top: -400px;
      margin-left: 450px;
      width: 50%;
     }
