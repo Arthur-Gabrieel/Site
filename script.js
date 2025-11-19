@@ -5,15 +5,21 @@ let i = 0;
 let intervalTime = 2200; // tempo entre palavras em ms
 
 function showWord(index) {
-  el.classList.remove('show'); // esconde o texto (fade out)
+  el.classList.remove('show'); // fade out
   setTimeout(() => {
     el.textContent = palavras[index]; // muda a palavra
-    el.classList.add('show'); // mostra o texto (fade in)
-  }, 200); // espera 200ms para o fade out completar
+    el.classList.add('show'); // fade in
+  }, 200); // espera o fade out completar
 }
 
 // inicializa
 showWord(i);
+
+// troca as palavras a cada intervalo
+setInterval(() => {
+  i = (i + 1) % palavras.length; // incrementa o índice
+  showWord(i);
+}, intervalTime);
 
 // ============================= Carrousel =======================================
 
