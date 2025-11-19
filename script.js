@@ -21,55 +21,6 @@ setInterval(() => {
   showWord(i);
 }, intervalTime);
 
-// ============================= Carrousel =======================================
-
-
-const carousel = document.querySelector(".projectCarousel");
-const scrollbar = document.querySelector(".customScrollbar");
-const thumb = document.querySelector(".customThumb");
-
-function updateThumbPosition() {
-    const scrollPercent = carousel.scrollLeft / (carousel.scrollWidth - carousel.clientWidth);
-    const maxThumbX = scrollbar.clientWidth - thumb.clientWidth;
-    thumb.style.left = (scrollPercent * maxThumbX) + "px";
-}
-
-carousel.addEventListener("scroll", updateThumbPosition);
-
-// --- arrastar o thumb ---
-let isDragging = false;
-let startX;
-let startLeft;
-
-thumb.addEventListener("mousedown", (e) => {
-    isDragging = true;
-    startX = e.clientX;
-    startLeft = parseInt(window.getComputedStyle(thumb).left);
-    thumb.style.cursor = "grabbing";
-});
-
-document.addEventListener("mousemove", (e) => {
-    if (!isDragging) return;
-
-    const dx = e.clientX - startX;
-    let newLeft = startLeft + dx;
-
-    const maxLeft = scrollbar.clientWidth - thumb.clientWidth;
-
-    if (newLeft < 0) newLeft = 0;
-    if (newLeft > maxLeft) newLeft = maxLeft;
-
-    thumb.style.left = newLeft + "px";
-
-    const percent = newLeft / maxLeft;
-    carousel.scrollLeft = percent * (carousel.scrollWidth - carousel.clientWidth);
-});
-
-document.addEventListener("mouseup", () => {
-    isDragging = false;
-    thumb.style.cursor = "grab";
-});
-
 //=============================== Botões na parte de Formmção =================================
 
 // Seleciona os botões
