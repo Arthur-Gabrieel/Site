@@ -57,3 +57,28 @@ btnCertification.addEventListener('click', () => {
   academyBox2.style.display = 'block';
   certificationBox.style.display = 'none';
   certificationBox2.style.display = 'none';
+
+
+
+
+  // ===================Animaçao fade==================
+
+  const navLinks = document.querySelectorAll('nav a');
+
+navLinks.forEach(link => {
+  link.addEventListener('click', (e) => {
+    e.preventDefault(); // previne o salto instantâneo
+
+    const targetId = link.getAttribute('href').substring(1);
+    const target = document.getElementById(targetId);
+
+    // Remove show de todas as seções
+    document.querySelectorAll('.fade').forEach(sec => sec.classList.remove('show'));
+
+    // Adiciona show na seção clicada
+    target.classList.add('show');
+
+    // Opcional: rolagem suave até a seção
+    target.scrollIntoView({ behavior: 'smooth' });
+  });
+});

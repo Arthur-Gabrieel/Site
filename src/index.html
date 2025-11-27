@@ -66,6 +66,19 @@
          box-shadow: 0 0 5px rgba(28, 188, 194, 0.9); 
     }
 
+ .fade-in {
+  opacity: 0; /* garante que começa invisível */
+  animation: fadeIn 1s ease-in-out forwards; /* animação */
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-20px); } /* sobe um pouco */
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+
+
+
    
 
 @media (max-width: 768px) {
@@ -90,7 +103,7 @@
     <!-- -----------------------  Barra Navegação ---------------------------------- -->
 
   <header style="background-color: rgb(32, 32, 34); border-bottom: 3px solid rgb(25, 150, 167);" 
-  class="flex  justify-center w-full h-10 fixed z-100 top-0">
+  class="fade-in flex  justify-center w-full h-10 fixed top-0 z-50 ">
     <nav>
         <ul class="flex gap-4 pt-1">
             <li class="text-white"><a href="#aboutMe" class="linksNav hover: cursor-pointer">Sobre Mim</a></li>
@@ -411,7 +424,7 @@ na construção de soluções bem estruturadas para o mercado.
                 </div>
         </section>
 
-        <section class="contact flex flex-col justify-center items-center mt-12 mb-16 md:mt-32 text-white">
+        <section id="contact" class="contact flex flex-col justify-center items-center mt-12 mb-16 md:mt-32 text-white">
             <h1 class="titleContact text-2xl font-bold mb-10 md:text-3xl">Contato</h1>
 
             
