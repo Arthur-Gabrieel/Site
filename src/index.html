@@ -1,0 +1,434 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <!-- Link Fonte -->
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200;1,800&display=swap"
+        rel="stylesheet">
+</head>
+<style>
+    .linksNav:hover {
+        color: rgb(35, 87, 84);
+
+    }
+
+    #body {
+        font-family: 'Montserrat' Arial, Helvetica, sans-serif;
+        font-style: italic;
+        font-weight: 200;
+        background-color: rgb(21, 21, 22);
+       
+
+    }
+
+    #buttonCV:hover {
+        background-color: white!important;
+        color: rgba(11, 141, 145, 0.959);
+        cursor: pointer;
+        border: 1px solid rgba(11, 141, 145, 0.959)!important;
+        box-shadow: 0 0 15px rgba(28, 188, 194, 0.9); 
+    }
+
+    #aboutBox {
+         box-shadow: 0 0 10px rgba(28, 188, 194, 0.9); 
+    }
+
+     .myPhoto {
+         box-shadow: 0 0 15px rgba(28, 225, 231, 0.9); 
+    }
+
+    #project1 {
+         box-shadow: 0 0 5px rgba(28, 188, 194, 0.9); 
+    }
+    #project2 {
+         box-shadow: 0 0 5px rgba(28, 188, 194, 0.9); 
+    }
+    #project3 {
+         box-shadow: 0 0 5px rgba(28, 188, 194, 0.9); 
+    }
+
+
+    #academyBox {
+        box-shadow: 0 0 5px rgba(28, 188, 194, 0.9); 
+    }
+
+    #academyBox2 {
+        box-shadow: 0 0 5px rgba(28, 188, 194, 0.9); 
+    }
+
+   
+
+@media (max-width: 768px) {
+  html, body {
+    overflow-x: hidden !important;
+  }
+
+  /* Faz qualquer elemento grande se ajustar no mobile */
+  * {
+    max-width: 100vw;
+    box-sizing: border-box;
+  }
+}
+
+    
+
+</style>
+
+   
+<body id="body" class="overflow-x-hidden">
+
+    <!-- -----------------------  Barra Navegação ---------------------------------- -->
+
+  <header style="background-color: rgb(32, 32, 34); border-bottom: 3px solid rgb(25, 150, 167);" 
+  class="flex  justify-center w-full h-10 fixed z-100 top-0">
+    <nav>
+        <ul class="flex gap-4 pt-1">
+            <li class="text-white"><a href="#aboutMe" class="linksNav hover: cursor-pointer">Sobre Mim</a></li>
+
+            <li class="text-white"><a href="#projects"  class="linksNav hover: cursor-pointer">Projetos</a></li>
+
+            <li class="hidden md:block text-white"><a href="#Training"   class="linksNav hover: cursor-pointer">Formação</a></li>
+
+            <li class="hidden md:block text-white"><a href="#technology"   class="linksNav hover: cursor-pointer">Tecnologias</a></li>
+
+            <li class="text-white"><a href="#contact"    class="linksNav hover:cursor-pointer">Contato</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+    <!-- ----------------------- Sessão Apresentação ---------------------------------- -->
+    <section id="presentation">
+
+    <!-- Meu nome com H1 e o Fullstack -->
+    <div class=" flex flex-col items-center space-y-0 md:space-y-2 mr-12 mt-4 md:mr-170 md:mt-24">
+       <h1 class="name text-white font-extrabold text-2xl  md:text-5xl ml-14">ARTHUR</h1>
+       <h1 class="name text-white font-extrabold text-2xl  md:text-5xl ml-14">GABRIEL</h1>
+        <h3 id="dev" class="text-white ml-12">Desenvolvedor Full Stack</h3>
+    </div>
+
+        <!-- Div do carrousel animado e o bota0 -->
+        <div class="role-wrap flex flex-col items-center mt-4 gap-8 md:ml-82 md:items-start">
+            <div class="word-carousel flex text-center" aria-live="polite" aria-atomic="true">
+
+                <span id="carousel-text" style="color: rgb(28, 188, 194); background-color: rgba(11, 141, 145, 0.164); border: 2px solid rgb(28, 188, 194); border-radius: 5px; padding: 5px; padding-left: 10px; padding-right: 10px;" class="carousel-text font-bold ">HTML</span>
+            </div>
+
+            <!-- Botão baixar cv -->
+            <button id="buttonCV" style="background-color:rgba(11, 141, 145, 0.959); width: 86px; height: 35px; border: 1px solid white;  box-shadow: 0 0 10px white; " class="text-white md:relative md:right-3 ">Baixar CV</button>
+        </div>
+
+        <!-- Imagem do notebook -->
+        <img id="notebookAzul" src="img/notebookAzul.png" class="hidden md:block md:w-90 h-auto ml-auto -mt-74 mr-16" alt="notebook blue image">
+
+    </section>
+    <!-- ----------------------- Sessão Sobre Mim ------------------------------------>
+         
+        <section id="aboutMe" class=" flex justify-center mt-30 ml-28">
+            <div class="aboutContainer relative right-5 md:relative md:left-5">
+
+                <!-- circulo da foto -->
+                <div style="background-color: white; outline: 3px solid rgba(11, 141, 145, 0.959);  border-radius: 50%;" class="myPhoto flex items-center w-42 h-42 rounded-full ml-16 md:ml-auto md:mr-auto md:relative md:right-12 ">
+
+                    <!-- minha foto -->
+                    <img src="img/myPhoto.png"  alt="circular Photo" class="circularPhoto w-42 h-42 rounded-full object-cover ">     
+                </div>
+
+            <!-- Titulo "Sobre Mim" -->
+            <h1 id="titleAbout" class="mt-14 text-white font-bold text-2xl md:text-3xl">Sobre Mim</h1>
+
+                <!-- Caixa da texto -->
+                <div id="aboutBox" style="background-color: rgb(32, 32, 34); border: 1px solid rgb(25, 150, 167); border-radius: 8px;" class="flex items-center mt-5 mr-36 w-90 md:w-300 ">
+
+                    <!-- Texto da Caixa -->
+                    <div class="aboutText  p-5 text-white ">
+                        <p class="textAbout">
+                            Olá! Meu nome é Arthur Gabriel, tenho 18 anos<br>
+                            e sou um desenvolvedor Full Stack focado em tecnologia. Desde jovem, sempre fui fascinado
+                            por computadores e pela forma como eles funcionam, o que me motivou a iniciar minha jornada
+                            na programação há cerca de 2 anos.<br><br>
+
+                            Desde então, tenho aprendido diversas linguagens e ferramentas, como HTML, CSS, JavaScript,
+                            Python e Java, além de frameworks populares como Tailwind CSS e Bootstrap. Essa base me
+                            permite desenvolver aplicações web completas e funcionais.<br><br>
+
+                            Tenho experiência tanto em front-end quanto em back-end e busco continuar aprimorando minhas
+                            habilidades, participando de projetos desafiadores e aplicando soluções criativas que tragam
+                            resultados eficientes e bem estruturados.
+
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ----------------------- Sessão Projetos ---------------------------------- -->
+         
+
+        <section id="projects" class="flex flex-col justify-center items-center mt-10">
+             <h1 id="titleProject" class="text-white font-bold text-2xl mt-5 md:text-3xl">Projetos</h1>
+            <p id="textProject1" class="textAbout text-white mt-5">Aqui estão alguns dos meus projetos recentes:</p>
+          
+
+            <!-- projeto gameMaker -->
+           <div id="projectBoxes" class="flex flex-col justify- items-center w-full mt-10 mb-10 gap-10">
+             
+                <div id="project1" style="background-color: rgb(32, 32, 34); border: 1px solid rgb(25, 150, 167);
+                 border-radius: 5px;" class="w-64 p-5 text-white md:w-[750px] md:h-auto">
+
+                    <!-- Configuração da imagem 1-->
+                    <div class="flex justify-center mb-5">
+                        <img class="projectsImage w-44 h-auto " src="img/Blastron.jpeg" alt="Em breve">
+                    </div>
+
+                        <p class="projectWord">Esse é um projeto que eu estava utilizando uma Game Engine (GameMaker)
+                            ele é
+                            um
+                            projeto que onde eu faço um jogo 2D chamado Blastron, onde um jogador controla uma moto
+                            espacial que deve sobreviver uma onda de inimigos que tentam destruir a nave do jogador.
+                            E pra zerar o jogo o jogado deve derrotar o chefe final que é um robô gigante.
+                        </p>
+                </div>
+                    
+                    <!-- projeto app batePonto -->
+                  <div id="project2"  style="background-color: rgb(32, 32, 34); border: 1px solid rgb(25, 150, 167); border-radius: 5px;" class="w-64  p-5 text-white md:w-[750px] md:h-auto">
+
+                        <!-- Configuração da imagem 2  -->
+                       <div class="flex justify- w-72 mb-5 gap-4 md:ml-48">
+                            <img class="projectsImage1 w-24 md:w-44 h-auto " src="img/batePonto1.png" alt="Em breve">
+                            <img class="projectsImage1 w-24 md:w-44 h-auto " src="img/batePonto2.png" alt="Em breve">
+                        </div>
+
+                        <p class="projectWord">Esse projeto seria o Aplicativo de Registro de Ponto onde eu usei Java,
+                            React
+                            Native,
+                            Spring Boot, PostgreSQL e o expo para desenvolver um aplivativo mobile que permite aos
+                            usuários cadastrados registra suas entradas e saídas de trabalho via Wifi.
+                        </p>
+
+                        <a href="https://www.linkedin.com/in/arthur-gabriel-560b76291/recent-activity/all/"
+                            target="_blank">
+                            <img class="linked w-10 h-auto ml-auto" src="img/imageLinkedin.png" alt="Descrição da imagem">
+                        </a>
+                    </div>
+              
+                    <!-- projeto basket -->
+                   <div id="project3"  style="background-color: rgb(32, 32, 34); border: 1px solid rgb(25, 150, 167); border-radius: 5px;" class="w-64  p-5 text-white md:w-[750px] md:h-auto ">
+                    
+                    <!-- Configuração da imagem 3 -->
+                     <div class="flex justify-center w-72 mb-5">
+                        <img class="projectsImage2 w-60 md:w-96 h-auto mr-16 pr-3 md:ml-[480px]" src="img/basket.png" alt="Em breve">
+                    </div>
+
+                        <p class="projectWord"> Esse é um dos sites que desenvolvi junto com o meu grupo no curso que eu
+                            fazia.
+                            O objetivo do trabalho era criar um site utilizando JavaScript como linguagem principal.
+
+                            O resultado ficou simples, mas deu bastante trabalho para ser desenvolvido.
+
+                        </p>
+                </div>
+            </div>
+               
+        </section>
+
+
+        <!-- ---------------------------- Sessão Formação ---------------------------------- -->
+
+        <section id="Training" class=" text-white">
+
+        <div class="buttonContainer flex items-center justify-center">
+            <h1 class="titleTraining text-2xl font-bold md:text-3xl">Formação</h1> 
+        </div>
+
+
+            <!-- Botão Formação Acadêmica e Certificados -->
+            <div class="buttonFC flex items-center justify-center mt-5 gap-10">
+                <button class="buttonTraining" data-tab="tab1">Formação Acadêmica</button>
+                <button class="buttonTraining2" data-tab="tab2">Certificados</button>
+            </div>
+       
+
+            <div  class="tabs flex flex-col items-center w-full justify-center mt-10 mb-10 gap-10 md:flex-row ">
+
+                <div id="academyBox" style="background-color: rgb(32, 32, 34);  border: 1px solid rgb(25, 150, 167); border-radius: 5px;" class="w-72 h-auto md:w-[520px]  md:h-[500px]">
+                    <div id="academyContent" class="">
+
+                    <div class="flex gap-10">
+                        <img  class="trainingPhoto w-20 h-auto p-5 " src="img/estacioPhoto.png" alt="">
+                        <h2 id="titleEstacio" class="mt-10 relative right-12 font-bold">Universidade Estácio</h2>
+                    </div>
+                        <p class="textTraining pl-5 pb-5"> Universidade Estácio,<br>
+                            onde estou cursando Análise e Desenvolvimento de Sistemas.<br>
+                            Aqui desenvolvo competências em lógica de programação,<br>
+                            desenvolvimento de sistemas e tecnologias voltadas ao mercado.<br><br>
+
+                            Durante o curso, aprofundo meus conhecimentos em:<br>
+                            - Programação orientada a objetos,<br>
+                            - Banco de dados,<br>
+                            - Arquitetura de software<br>
+                            e criação de aplicações modernas.<br><br>
+
+                            Essa formação tem me permitido evoluir<br>
+                            tanto na parte teórica quanto prática,<br>
+                            aplicando conceitos essenciais para<br>
+                            o desenvolvimento de soluções eficientes<br>
+                            e bem estruturadas.
+                        </p>
+                    </div>
+                </div>
+
+                <div id="academyBox2" style="background-color: rgb(32, 32, 34);  border: 1px solid rgb(25, 150, 167); border-radius: 5px;" class="w-72 h-auto md:w-[520px]  md:h-[500px]">
+                    <div id="academyContent2" >
+
+                    <div class="flex gap-10">
+                        <img  class="trainingPhoto w-20 h-auto p-5" src="img/prozPhoto.png" alt="">
+                        <h2 id="titleProz" class=" relative right-12 mt-10 font-bold">Proz Educação</h2>
+                    </div>
+
+                        <p class="textTraining pl-5 pb-5"> Também concluí em 2025 o curso técnico na Instituição Proz Educação,<br>
+pelo programa Trilhas do Futuro, onde aprendi desenvolvimento web,<br>
+back-end, sistemas inteligentes e boas práticas de programação.<br><br>
+
+Durante 2 anos, participei de projetos práticos individuais e em grupo,<br>
+fortalecendo habilidades em trabalho em equipe e resolução de problemas.<br><br>
+
+Ao longo do curso, desenvolvi competências em lógica de programação,<br>
+modelagem de sistemas, versionamento de código e metodologias ágeis.<br><br>
+
+Além disso, tive contato com frameworks modernos, criação de APIs,<br>
+administração de banco de dados e integração entre diferentes tecnologias.<br><br>
+
+Essa formação técnica complementa minha trajetória acadêmica,<br>
+ampliando minha visão sobre o desenvolvimento de aplicações,<br>
+melhorando minha capacidade e reforçando minha prática<br>
+na construção de soluções bem estruturadas para o mercado.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="tabs2">
+
+                <div id="certificationBox" style="background-color: rgb(32, 32, 34);  border: 1px solid rgb(25, 150, 167); border-radius: 5px;">
+                    <div id="certificationContent">
+                        <img src="" alt="Em breve">
+                    </div>
+                </div>
+
+                <div id="certificationBox2" style="background-color: rgb(32, 32, 34);"">
+                    <div id="certificationContent2">
+                        <img src="" alt="Em breve">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <section id="technology" class="flex flex-col justify-center items-center mt-10 md:mt-80 text-white">
+            <h1 class="titleTechnology text-2xl font-bold gap-4 md:text-3xl">Tecnologias</h1>
+
+                <h3 id="textTechnology">Tecnologias que já usei:</h3>
+
+                <div class="technologyContainer  flex flex-col items-center w-full justify-center ">
+
+                <div style="background-color: rgb(32, 32, 34);  border: 1px solid rgb(25, 150, 167); border-radius: 5px;" class="technologyBox mt-10 w-[420px] h-auto md:w-[680px] md:h-96">
+
+
+
+                    <!-- Divs 1 -->
+                    <div class="items-center grid grid-cols-5 md:mt-14">
+                        <div class="tech  flex flex-col items-center justify-center text-center gap-1">
+                            <img class="photoLin w-16 h-auto pl-5 md:w-24 " src="img/htmlPhoto.png" alt="">
+                            <span class="text-xs">HTML</span>
+                        </div>
+
+                        <div class="tech flex flex-col items-center justify-center text-center gap-1">
+                            <img class="photoLin w-16 h-auto md:w-24" src="img/cssPhoto.png" alt="">
+                            <span class="text-xs">CSS</span>
+                        </div>
+
+                        <div class="tech flex flex-col items-center justify-center text-center gap-1">
+                            <img class="photoLin w-12 h-auto md:w-24" src="img/javaScriptPhoto.png" alt="">
+                            <span class="text-xs">JavaScript</span>
+                        </div>
+
+                        <div class="tech flex flex-col items-center justify-center text-center md:relative md:top-2">
+                            <img class="photoLin w-12 h-auto md:w-24" src="img/phpPhoto.png" alt="">
+                            <span class="text-xs">PHP</span>
+                        </div>
+
+                        <div class="tech flex flex-col items-center justify-center text-center">
+                            <img class="photoLin w-26 h-auto md:w-32" src="img/javaPhoto.png" alt="">
+                            <span class="text-xs relative bottom-2">Java</span>
+                        </div>
+                    </div>
+
+
+                        <!-- Divs 2 -->
+                         <div class=" items-center grid grid-cols-5 md:mt-24">
+
+                            <div class="tech flex flex-col items-center justify-center text-center gap-1">
+                                <img class="photoLin w-12 h-auto pl-5 md:w-24" src="img/tailwindPhoto.png" alt="">
+                                <span class="text-xs">Tailwind CSS</span>
+                            </div>
+
+                            <div class="tech flex flex-col items-center justify-center text-center gap-1">
+                                <img class="photoLin w-20 h-auto md:w-32" src="img/postgresPhoto.png" alt="">
+                                <span class="text-xs relative bottom-2">PostgreSQL</span>
+                            </div>
+
+                            <div class="tech flex flex-col items-center justify-center text-center gap-1 md:relative md:top-3">
+                                <img class="photoLin w-8 h-auto md:w-16" src="img/raectNativePhoto.png" alt="">
+                                <span class="text-xs">React Native</span>
+                            </div>
+
+                            <div class="tech flex flex-col items-center justify-center text-center gap-1 md:relative md:top-5">
+                                <img class="photoLin w-12 h-auto md:w-18" src="img/pythonPhoto.png" alt="">
+                                <span class="text-xs">Python</span>
+                            </div>
+
+                            <div class="tech flex flex-col items-center justify-center text-center gap-1 md:relative md:top-5">
+                                <img class="photoLin w-16 h-auto md:w-24" src="img/springbottPhoto.png" alt="">
+                                <span class="text-xs">Spring Boot</span>
+                            </div>
+                        </div>
+                </div>
+                </div>
+        </section>
+
+        <section class="contact flex flex-col justify-center items-center mt-52 md:mt-32 text-white">
+            <h1 class="titleContact text-2xl font-bold mb-10 md:text-3xl">Contato</h1>
+
+            
+            
+            <div style="background-color: rgb(32, 32, 34);  border: 1px solid rgb(25, 150, 167); border-radius: 5px;" 
+            class="contactBox flex justify-center text-center w-72 h-44">
+
+                <h3 class="nameContacto m-0 leading-none relative left-40 pt-5 md:left-30">Arthur Gabriel</h3>
+              
+             
+                    
+                    <div class="flex mt-24 ml-5 pr-10 gap-5">
+                    <a href="https://wa.me/5531973614464" id="zap">
+                        <img src="img/zap.png" target="_blank" class="w-22 h-20 md:w-28 md:h-12 hover:cursor-pointer" alt=""></a>
+
+                    <a href="https://www.instagram.com/arthur_g.rs/?next=%2F" class="contactoLink">
+                        <img src="img/insta.png" target="_blank" class="w-22 h-20 md:w-24 md:h-12 hover:cursor-pointer" alt=""></a>
+
+                    <a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit"
+                        class="contactoLink" target="_blank">
+                        <img src="img/imageLinkedin.png" class="w-22 h-20 pr-4 md:w-32 md:h-12 hover:cursor-pointer" alt=""></a>
+                    </div>
+                </div>
+        </section>
+   
+        <script src="script.js"></script>
+</body>
+
+</html>
