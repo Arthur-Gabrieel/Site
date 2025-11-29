@@ -21,7 +21,37 @@ setInterval(() => {
   showWord(i);
 }, intervalTime);
 
-//=============================== Botões na parte de Formmção =================================
+
+//===============================  =================================
+const linksNav = document.querySelectorAll('.linksNav');
+const sections = document.querySelectorAll('section');
+
+function scrollNav() {
+    let scrollY = window.scrollY;
+
+    // Remove .active de todos os links
+    linksNav.forEach(link => link.classList.remove('active'));
+
+    // Percorre todas as seções
+    sections.forEach((section, i) => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.offsetHeight;
+
+        // Ajuste: ativa o link quando o scroll passa 1/3 da seção
+        const triggerPoint = sectionTop - window.innerHeight / 3;
+
+        if (scrollY >= triggerPoint && scrollY < sectionTop + sectionHeight) {
+            linksNav[i].classList.add('active');
+        }
+    });
+}
+
+// Chama a função sempre que a página rola
+window.addEventListener('scroll', scrollNav);
+
+
+
+//=============================== Botões na parte de Formação =================================
 
 // Seleciona os botões
 const btnAcademy = document.querySelector('.buttonTraining');
